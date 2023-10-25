@@ -1,0 +1,12 @@
+body {
+    font-family:"Inter",sans-serif ;
+    line-height: 28px;
+    font-weight: 400;
+    color: #6a6a6a;
+    font-size: 14px;
+}
+.navbar {
+    background-color: #3b5d50;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
