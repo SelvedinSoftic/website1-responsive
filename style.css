@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html,body {
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+
+}
+    
+
 body {
     font-family:"Inter",sans-serif ;
     line-height: 28px;
@@ -9,4 +19,65 @@ body {
     background-color: #3b5d50;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: #fff;
+    position: fixed;
+    z-index: 1030;
+    display: flex;
+    width: 100%;
+    top: 0;
+   
+    
+    
 }
+.furni-name {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.285rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding-top: 0.357rem;
+    padding-bottom:0.357rem ;
+    margin-right: 1.142rem;
+}
+span {
+    opacity: 0.4;
+}
+.navbar-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0.857rem;
+    padding-right:0.857rem ;
+    justify-content: space-between;
+    width: 100%;
+
+    
+}
+.navbar-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navbar-orderlist {
+    list-style: none;
+}
+
+.icon-wrap {
+    padding: 0.285rem 0.857rem;
+    border: 1px solid transparent;
+    opacity: 0.55;
+    height: 30px;
+    width: 30px;
+    
+}
+
+
+.hamburger svg path {
+    fill: #fff;
+    stroke: #fff;
+}
+
+
