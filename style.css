@@ -38,6 +38,7 @@ body {
     padding-top: 0.357rem;
     padding-bottom:0.357rem ;
     margin-right: 1.142rem;
+    letter-spacing: 0.6px;
 }
 span {
     opacity: 0.4;
@@ -71,6 +72,7 @@ span {
     opacity: 0.55;
     height: 30px;
     width: 30px;
+
     
 }
 
@@ -80,4 +82,91 @@ span {
     stroke: #fff;
 }
 
+.container-toggle {
+    box-sizing: border-box;
+    color: rgb(106, 106, 106);
+    display: block;
+    flex-basis: 100%;
+    flex-grow: 1;
+    
+    
+   
+}
 
+
+div #menuToggle {
+    display: none;
+}
+
+div #menu,
+div #menu2 {
+    display: none;
+}
+
+div #menuToggle:checked + div #menu{
+    display: block;
+    color: #fff;
+    list-style: none;
+    padding: 0;
+    
+
+    
+}
+div #menuToggle:checked + div #menu2 {
+    display: block;
+    color: #fff;
+    list-style: none;
+    display: flex;
+    padding: 0;
+   
+    
+    
+    
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.5;
+   
+    
+}
+
+#first-icon {
+    margin-right: 20px;
+}
+#menu li {
+    padding: 0.571rem 0;
+}
+#menu2 li {
+    padding: 0.571rem 0;
+}
+
+
+#first-icon i.fa-regular.fa-user {
+    font-size: 20px;
+    padding: 0.571rem 0;
+    
+    
+    
+}
+
+#second-icon i.fa-solid.fa-cart-shopping {
+    font-size: 20px;
+    padding: 0.571rem 0;
+
+}
+
+#menu {
+    margin: 0;
+    margin-bottom:0.571rem ;
+}
+#menu2 {
+    margin: 0;
+    margin-bottom: 0.571rem;
+   
+}
+
+#home a {
+    opacity: 1;
+}

@@ -1,71 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-</head>
-<body>
-   <nav class="navbar" >
-    <div class="navbar-container">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
         <a class="furni-name" href="index.html">Furni<span>.</span></a>
-    
-    <div class="icon-wrap">
-   <label for="menuToggle" class="hamburger">
+
+        <div class="icon-wrap">
+          <label for="menuToggle" class="hamburger">
             <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-            <svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-            <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-            <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 18L20 18"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 12L20 12"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 6L20 6"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
             </svg>
-        </label>
-    </div>
-</div>
-   </nav>
-
-</body>
-</html>
- <div class="navbar-parts">
-        <ul class="navbar-orderlist">
-            <li class="li-home" > <a href="index.html">Home</a></li>
-            <li class="li-shop" ><a href="shop.href">Shop</a></li>
-            <li class="li-aboutUs"><a href="aboutUS.html">About us</a></li>
-            <li class="li-services"><a href="services.html">Services</a></li>
-            <li class="li-blog"><a href="blog.html">Blog</a></li>
-            <li class="li-contactUs"><a href="contactUs.html">Contact us</a></li>
-        </ul>
-        <ul class="navbar-icons">
-            <li class="user-icon">
-                <i class="fa-regular fa-user"></i>
-            </li>
-            <li class="user-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </li>
-        </ul>
-    </div>
-
-
-    <nav>
-        <!-- Hidden Checkbox -->
+          </label>
+        </div>
         <input type="checkbox" id="menuToggle" />
-
-        <!-- Hamburger Icon wrapped inside a label, which when clicked will change the state of checkbox -->
-        
-
-        <!-- Actual Menu -->
-        <ul class="menu" id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="container-toggle">
+          <ul id="menu">
+            <li id="home"><a href="#">Home</a></li>
+            <li id="shop"><a href="#">Shop</a></li>
+            <li id="about"><a href="#">About us</a></li>
+            <li id="services"><a href="#">Services</a></li>
+            <li id="blog"><a href="#">Blog</a></li>
+            <li id="contact"><a href="#">Contact us</a></li>
+          </ul>
+          <ul class="menu2" id="menu2">
+            <li id="first-icon">
+              <i class="fa-regular fa-user"></i>
+            </li>
+            <li id="second-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-
-    <style>
-        /* Hide the checkbox */
-        #menuToggle {
-            display: none;
-        }
+  </body>
+</html>
