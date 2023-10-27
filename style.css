@@ -80,22 +80,22 @@ span {
   flex-grow: 1;
 }
 
-div #menuToggle {
+#menuToggle {
   display: none;
 }
 
-div #menu,
-div #menu2 {
+.menu,
+.menu2 {
   display: none;
 }
 
-div #menuToggle:checked + div #menu {
+#menuToggle:checked + .menu {
   display: block;
   color: #fff;
   list-style: none;
   padding: 0;
 }
-div #menuToggle:checked + div #menu2 {
+#menuToggle:checked + .menu2 {
   display: block;
   color: #fff;
   list-style: none;
@@ -103,7 +103,7 @@ div #menuToggle:checked + div #menu2 {
   padding: 0;
 }
 
-#menu a {
+.menu a {
   color: #fff;
   text-decoration: none;
   opacity: 0.5;
@@ -112,10 +112,10 @@ div #menuToggle:checked + div #menu2 {
 #first-icon {
   margin-right: 20px;
 }
-#menu li {
+.menu li {
   padding: 0.571rem 0;
 }
-#menu2 li {
+.menu2 li {
   padding: 0.571rem 0;
 }
 
@@ -129,11 +129,11 @@ div #menuToggle:checked + div #menu2 {
   padding: 0.571rem 0;
 }
 
-#menu {
+.menu {
   margin: 0;
   margin-bottom: 0.571rem;
 }
-#menu2 {
+.menu2 {
   margin: 0;
   margin-bottom: 0.571rem;
 }
@@ -143,60 +143,64 @@ div #menuToggle:checked + div #menu2 {
 }
 
 @media (min-width: 768px) and (min-height: 1024px) {
-  .navbar,
-  .navbar-container,
-  .icon-wrap,
-  div .container-toggle,
-  div #menu,
-  div #menu2,
-  div #menu li,
-  div #menu2 li {
-    margin: 0;
-    padding: 0;
-  }
+  
 
   .navbar {
     padding-top: 20px;
-    padding-bottom: 8px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+    position: fixed;
   }
   .navbar-container {
+    box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     margin: 0 1.714rem;
-    flex-direction: column;
     padding: 0 0.857rem;
     height: 3.142rem;
+    text-align: start;
   }
 
   .icon-wrap {
     display: none;
   }
 
-  div .container-toggle {
+  .container-toggle {
     display: flex;
-    height: auto;
+    
     align-items: center;
+    box-sizing: border-box;
+    text-align: start;
+    
   }
-  div #menu,
-  div #menu2 {
+  .menu,
+  .menu2 {
     display: flex;
     flex-direction: row;
     list-style: none;
+    margin: 0;
   }
 
-  div #menu li,
-  div #menu2 li {
+  .menu li,
+  .menu2 li {
     padding: 0 0.571rem;
     color: #fff;
+    
   }
 
-  div #menu2 {
+  .menu2 {
     margin-left: 2.857rem;
   }
-  #first-icon i.fa-regular.fa-user {
-    margin-right: 1.428rem;
-  }
+  
 
   #home a {
     content: "";
