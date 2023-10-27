@@ -190,9 +190,6 @@ div #menuToggle:checked + div #menu2 {
     padding: 0 0.571rem;
     color: #fff;
   }
-  div #menu {
-    margin-left: 68.4062px;
-  }
 
   div #menu2 {
     margin-left: 2.857rem;
