@@ -136,6 +136,7 @@ span {
 .menu2 {
   margin: 0;
   margin-bottom: 0.571rem;
+  cursor: pointer;
 }
 
 #home a {
@@ -146,8 +147,7 @@ span {
 
 .hero {
   background-color: #3b5d50;
-  padding: calc(8rem - 30px) 0 calc(8rem - 30px);
-  
+  padding: 7rem 0;
 }
 
 .hero-container {
@@ -160,15 +160,18 @@ span {
 }
 .border-text {
   justify-content: space-between !important;
+  margin: 0 -0.857rem;
 }
 
 .content-border {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
+  padding: 0 0.857rem;
+  box-sizing: border-box;
 }
 .content-hero {
-  padding-top: 1.5rem;
+  padding-top: 1.714rem;
   position: relative;
   z-index: 10;
 }
@@ -177,17 +180,19 @@ span {
   color: #fff;
   margin-bottom: 2.142rem;
   line-height: 1.2;
+  margin-top: 0;
+  letter-spacing: 1px;
 }
 
 .content-hero .p-text {
   opacity: 0.5;
   color: #fff;
-  margin-bottom: 1.714rem!important;
+  margin-bottom: 1.714rem !important;
   margin-top: 0;
 }
 .content-hero .buttons-hero {
   margin-top: 0;
-  margin-bottom:1.142rem ;
+  margin-bottom: 1.142rem;
 }
 
 .buttons-hero .shop-button {
@@ -203,22 +208,43 @@ span {
   cursor: pointer;
   line-height: 1.5;
   font-size: 1.142rem;
-  letter-spacing: 0.5px;
 }
 
 .buttons-hero .explore-button {
   background-color: transparent;
   border: 2px solid rgba(255, 255, 255, 0.3);
   font-weight: 600;
-  padding: 0.86rem 2.142rem;
+  padding: 1.04rem 2.142rem;
   border-radius: 2.142rem;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
   font-size: 1.142rem;
-  letter-spacing: 0.7px;
-  line-height: 1.714rem;
 
+  line-height: 1.714rem;
+}
+
+.img-container {
+  padding: 0 0.857rem;
+}
+
+.hero-images {
+  position: relative;
+  padding-top: 3.428rem;
+}
+
+.dots-white {
+  width: 35%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.couch {
+  width: 90%;
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
@@ -285,13 +311,61 @@ span {
   }
 
   #home a {
-    content: "";
-    opacity: 1;
     border-bottom: 5px solid #f9bf29;
     padding-bottom: 10px;
   }
-}
 
+  .hero {
+    padding: 11.571rem 0;
+    box-sizing: border-box;
+  }
+
+  .hero-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0.857rem;
+    max-width: 720px !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .content-hero h1 {
+    font-weight: 700;
+    font-size: 2.394rem;
+  }
+
+  .content-hero {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+  }
+
+  .menu li,
+  .menu2 li {
+    padding: 0.571rem 0.571rem;
+  }
+  
+
+  #shop,
+  #about,
+  #services,
+  #blog,
+  #contact {
+    border-bottom: 5px solid transparent;
+    transition: border-color 0.3s ease, opacity 0.3s ease;
+    color: #f9bf29;
+    padding-bottom: 4px;
+  }
+  #shop:hover,
+  #about:hover,
+  #services:hover,
+  #blog:hover,
+  #contact:hover {
+    opacity: 1;
+    color: #fff;
+    border-bottom-color: #f9bf29;
+  }
+}
 @media (min-width: 1200px) {
   .navbar-container {
     max-width: 1140px;
@@ -299,5 +373,30 @@ span {
   .menu li {
     margin-left: 1.071rem;
     margin-right: 1.071rem;
+  }
+  .hero {
+    padding-bottom: 13.714rem;
+  }
+
+  .hero-container {
+    max-width: 1140px !important;
+  }
+  .border-text {
+    display: flex;
+
+    box-sizing: border-box;
+  }
+  .content-border {
+    flex: 0 0 auto;
+    width: 41.6%;
+    box-sizing: border-box;
+  }
+
+  .content-hero {
+    position: relative;
+  }
+
+  .content-hero h1 {
+    font-size: 2.857rem;
   }
 }
