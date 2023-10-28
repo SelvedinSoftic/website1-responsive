@@ -142,6 +142,85 @@ span {
   opacity: 1;
 }
 
+/*Start hero section*/
+
+.hero {
+  background-color: #3b5d50;
+  padding: calc(8rem - 30px) 0 calc(8rem - 30px);
+  
+}
+
+.hero-container {
+  width: 100%;
+  padding-right: 0.857rem;
+  padding-left: 0.857rem;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+.border-text {
+  justify-content: space-between !important;
+}
+
+.content-border {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
+.content-hero {
+  padding-top: 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+.content-hero h1 {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2.142rem;
+  line-height: 1.2;
+}
+
+.content-hero .p-text {
+  opacity: 0.5;
+  color: #fff;
+  margin-bottom: 1.714rem!important;
+  margin-top: 0;
+}
+.content-hero .buttons-hero {
+  margin-top: 0;
+  margin-bottom:1.142rem ;
+}
+
+.buttons-hero .shop-button {
+  color: #2f2f2f;
+  background-color: #f9bf29;
+  border: 1px solid #f9bf29;
+  font-weight: 600;
+  padding: 0.857rem 2.142rem;
+  border-radius: 2.142rem;
+  text-decoration: none;
+  margin-right: 0.571rem;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1.5;
+  font-size: 1.142rem;
+  letter-spacing: 0.5px;
+}
+
+.buttons-hero .explore-button {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+  padding: 0.86rem 2.142rem;
+  border-radius: 2.142rem;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.142rem;
+  letter-spacing: 0.7px;
+  line-height: 1.714rem;
+
+}
+
 @media (min-width: 768px) {
   .menu2 {
     padding-left: 0;
@@ -179,13 +258,11 @@ span {
   }
 
   .container-toggle {
-    display: flex!important;
+    display: flex !important;
     align-items: center;
     box-sizing: border-box;
     text-align: start;
     justify-content: end;
-
-    
   }
   .menu,
   .menu2 {
@@ -215,13 +292,12 @@ span {
   }
 }
 
-@media (min-width: 1200px)  {
-
+@media (min-width: 1200px) {
   .navbar-container {
     max-width: 1140px;
-   }
+  }
   .menu li {
-    margin-left:1.071rem ;
+    margin-left: 1.071rem;
     margin-right: 1.071rem;
-}
+  }
 }
