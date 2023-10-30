@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 html,
 body {
@@ -80,28 +82,28 @@ span {
   flex-grow: 1;
 }
 
+
 #menuToggle {
   display: none;
 }
 
-.menu,
+.menu  {
+  display: none;
+  flex-direction: column;
+}
 .menu2 {
   display: none;
+  flex-direction: row;
 }
 
-#menuToggle:checked + .menu {
-  display: block;
-  color: #fff;
-  list-style: none;
-  padding: 0;
-}
-#menuToggle:checked + .menu2 {
-  display: block;
-  color: #fff;
-  list-style: none;
+#menuToggle:checked ~  .menu, 
+#menuToggle:checked ~  .menu2  {
   display: flex;
+  color: #fff;
+  list-style: none;
   padding: 0;
 }
+
 
 .menu a {
   color: #fff;
@@ -137,6 +139,7 @@ span {
   margin: 0;
   margin-bottom: 0.571rem;
   cursor: pointer;
+  
 }
 
 #home a {
@@ -181,7 +184,7 @@ span {
   margin-bottom: 2.142rem;
   line-height: 1.2;
   margin-top: 0;
-  letter-spacing: 1px;
+  
 }
 
 .content-hero .p-text {
@@ -346,21 +349,21 @@ span {
   }
   
 
-  #shop,
-  #about,
-  #services,
-  #blog,
-  #contact {
+  #shop a,
+  #about a,
+  #services a,
+  #blog a,
+  #contact ::after {
     border-bottom: 5px solid transparent;
     transition: border-color 0.3s ease, opacity 0.3s ease;
-    color: #f9bf29;
-    padding-bottom: 4px;
+    color: #fff;
+    padding-bottom: 10px;
   }
-  #shop:hover,
-  #about:hover,
-  #services:hover,
-  #blog:hover,
-  #contact:hover {
+  #shop:hover a,
+  #about:hover a,
+  #services:hover a,
+  #blog:hover a,
+  #contact:hover a{
     opacity: 1;
     color: #fff;
     border-bottom-color: #f9bf29;
