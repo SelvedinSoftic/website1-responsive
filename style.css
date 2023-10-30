@@ -211,6 +211,7 @@ span {
   cursor: pointer;
   line-height: 1.5;
   font-size: 1.142rem;
+  transition: background-color 0.3s,border-color 0.3s;
 }
 
 .buttons-hero .explore-button {
@@ -223,9 +224,21 @@ span {
   text-decoration: none;
   cursor: pointer;
   font-size: 1.142rem;
-
   line-height: 1.714rem;
+  transition:border-color 0.3s;
 }
+
+.buttons-hero .shop-button:hover {
+  
+  background-color:#ecb11b ;
+  border-color: #ecb11b;
+}
+
+.buttons-hero .explore-button:hover {
+border-color: #fff;
+opacity: 1;
+}
+
 
 .img-container {
   padding: 0 0.857rem;
