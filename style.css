@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 html,
 body {
@@ -15,6 +13,7 @@ body {
   font-weight: 400;
   color: #6a6a6a;
   font-size: 14px;
+  background-color: #eff2f1;
 }
 .navbar {
   background-color: #3b5d50;
@@ -36,7 +35,6 @@ body {
   padding-top: 0.357rem;
   padding-bottom: 0.357rem;
   margin-right: 1.142rem;
-  letter-spacing: 0.6px;
 }
 span {
   opacity: 0.4;
@@ -82,12 +80,11 @@ span {
   flex-grow: 1;
 }
 
-
 #menuToggle {
   display: none;
 }
 
-.menu  {
+.menu {
   display: none;
   flex-direction: column;
 }
@@ -96,14 +93,13 @@ span {
   flex-direction: row;
 }
 
-#menuToggle:checked ~  .menu, 
-#menuToggle:checked ~  .menu2  {
+#menuToggle:checked ~ .menu,
+#menuToggle:checked ~ .menu2 {
   display: flex;
   color: #fff;
   list-style: none;
   padding: 0;
 }
-
 
 .menu a {
   color: #fff;
@@ -139,7 +135,6 @@ span {
   margin: 0;
   margin-bottom: 0.571rem;
   cursor: pointer;
-  
 }
 
 #home a {
@@ -184,7 +179,6 @@ span {
   margin-bottom: 2.142rem;
   line-height: 1.2;
   margin-top: 0;
-  
 }
 
 .content-hero .p-text {
@@ -211,7 +205,7 @@ span {
   cursor: pointer;
   line-height: 1.5;
   font-size: 1.142rem;
-  transition: background-color 0.3s,border-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .buttons-hero .explore-button {
@@ -225,20 +219,18 @@ span {
   cursor: pointer;
   font-size: 1.142rem;
   line-height: 1.714rem;
-  transition:border-color 0.3s;
+  transition: border-color 0.3s;
 }
 
 .buttons-hero .shop-button:hover {
-  
-  background-color:#ecb11b ;
+  background-color: #ecb11b;
   border-color: #ecb11b;
 }
 
 .buttons-hero .explore-button:hover {
-border-color: #fff;
-opacity: 1;
+  border-color: #fff;
+  opacity: 1;
 }
-
 
 .img-container {
   padding: 0 0.857rem;
@@ -263,8 +255,10 @@ opacity: 1;
   z-index: 2;
 }
 
+/*products*/
+
 .product-main {
-  padding:8rem 0 ;
+  padding: 8rem 0;
   box-sizing: border-box;
 }
 
@@ -274,7 +268,6 @@ opacity: 1;
   margin-left: auto;
   width: 100%;
   box-sizing: border-box;
-
 }
 
 .products {
@@ -282,7 +275,6 @@ opacity: 1;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-
 }
 
 .about-products {
@@ -292,7 +284,6 @@ opacity: 1;
   max-width: 100%;
   flex-shrink: 0;
   box-sizing: border-box;
-
 }
 
 .header-products {
@@ -307,16 +298,15 @@ opacity: 1;
 .p-products {
   margin-bottom: 1.714rem;
   margin-top: 0;
-
 }
 
 .p-button {
-  margin-bottom:1.142rem ;
+  margin-bottom: 1.142rem;
   margin-top: 0;
 }
 
 .button-product {
-  padding:0.857rem  2.142rem  ;
+  padding: 0.857rem 2.142rem;
   font-weight: 600;
   border: 1px solid transparent;
   color: #fff;
@@ -326,6 +316,61 @@ opacity: 1;
   font-size: 1.142rem;
   line-height: 1.5;
   cursor: pointer;
+  display: inline-block;
+}
+
+.product-item1 {
+  padding: 0 0.857rem;
+  margin-bottom: 3.428rem;
+  box-sizing: border-box;
+}
+.product-item1-a  {
+  padding-bottom:3.571rem ;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: block;
+  cursor: pointer;
+}
+.product-item1-img {
+  margin-bottom:2.142rem ;
+  position: relative;
+}
+.product-item1-h3 {
+  margin-bottom: 0.571rem;
+  color: #2f2f2f;
+  font-weight: 600;
+  font-size: 1.142rem;
+}
+
+.product-item1-price {
+color: #2f2f2f;
+font-weight: 800;
+font-size:1.285rem ;
+}
+
+.product-item1-btn {
+  margin-bottom:-17.5px;
+  opacity: 1;
+  position: absolute;
+  width:2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  
+  box-sizing: border-box;
+  background-color: #2f2f2f;
+  border-radius: 50%;
+  left:50%;
+  
+  
+  
+}
+.product-item1-btn-img {
+  text-align: center;
+  cursor: pointer;
+  vertical-align:middle;
+  
+  
 }
 
 @media (min-width: 768px) {
@@ -425,7 +470,6 @@ opacity: 1;
   .menu2 li {
     padding: 0.571rem 0.571rem;
   }
-  
 
   #shop a,
   #about a,
@@ -445,6 +489,15 @@ opacity: 1;
     opacity: 1;
     color: #fff;
     border-bottom-color: #f9bf29;
+  }
+
+  .product-container {
+    margin: 0 1.714rem;
+    max-width: 720px;
+  }
+
+  .header-products {
+    font-size: 2.002rem;
   }
 }
 @media (min-width: 1200px) {
